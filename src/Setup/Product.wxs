@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="*" Name="Jabra Genesys Workspace Desktop Edition call control extension" Language="1033" Version="0.9.0.0" Manufacturer="GN Audio A/S" UpgradeCode="328ed0ec-8d65-4c11-b0a2-32671ad02ad6">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="Setup" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+			  <Directory Id="GCTI" Name="GCTI">
+				  <Directory Id="INSTALLFOLDER" Name="Workspace Desktop Edition" />
+			</Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="ProductComponent" Guid="07F3C15C-391E-4774-B0D2-43F96DAEAD22">
+        <File Source="$(var.JabraCallControlExtension.TargetDir)\JabraCallControlExtension.dll" />
+        <File Source="$(var.JabraCallControlExtension.TargetDir)\JabraCallControlExtension.module-config" />
+        <File Source="$(var.JabraCallControlExtension.TargetDir)\JabraHidTelephonyApi.dll" />
+      </Component> 
+		</ComponentGroup>
+	</Fragment>
+</Wix>

@@ -14,7 +14,7 @@ $replacetext = "0.9." + $Env:BUILD_BUILDID + ".0"
 
 Write-Host Replacing $searchtext with $replacetext
 
-$files = Get-ChildItem -Recurse -include AssemblyInfo.cs
+$files = Get-ChildItem -Recurse -include AssemblyInfo.cs,*.wxs
 
 foreach ($file in $files)
 {
