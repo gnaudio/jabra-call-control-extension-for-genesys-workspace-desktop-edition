@@ -10,6 +10,8 @@ $ErrorActionPreference = "Stop"
 
 Write-Host "PSVersion = " + $PSVersionTable.PSVersion
 
+Write-Host "DownloadUrl = " + $env.DownloadUrl
+
 # Expand-Archive c:\a.zip -DestinationPath c:\a
 
 Write-Host VSTSCopyImportFiles.ps1 execution done
