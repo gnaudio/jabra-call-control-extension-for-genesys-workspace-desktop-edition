@@ -14,6 +14,11 @@ Write-Host "DownloadUrl = " $env:DownloadUrl
 
 Write-Host "path = " $env:BUILD_REPOSITORY_LOCALPATH 
 
-# Expand-Archive c:\a.zip -DestinationPath c:\a
+$output = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\Import\Import.zip";
+$outputFolder = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\Import";
+
+Invoke-WebRequest -Uri $env:DownloadUrl -OutFile $output
+
+Expand-Archive $output -DestinationPath $outputFolder
 
 Write-Host VSTSCopyImportFiles.ps1 execution done
