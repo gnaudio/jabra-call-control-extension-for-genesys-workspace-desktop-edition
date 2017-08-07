@@ -31,8 +31,9 @@ Before deploying the extension to an organization, you can test this extension f
 To remove the extension, close the Genesys Workspace Desktop Edition software and remove the files copied from the zip file.
 
 ## Deployment
-Genesys recommend using the [ClickOnce](https://msdn.microsoft.com/en-us/library/142dbbz4(v=vs.90).aspx) technology for deploying Genesys Workspace Desktop Edition to an organization.
-
-### How to deploy this extension to an organization
-Unzip the [zip file](https://github.com/gnaudio/jabra-call-control-extension-for-genesys-workspace-desktop-edition/releases) and copy the content to _C:\Program Files (x86)\GCTI\Workspace Desktop Edition_ to prepare and publish a new ClickOnce revision as documented here:
+### Option 1
+Genesys recommend using the [ClickOnce](https://msdn.microsoft.com/en-us/library/142dbbz4(v=vs.90).aspx) technology for deploying Genesys Workspace Desktop Edition to an organization. Unzip the [zip file](https://github.com/gnaudio/jabra-call-control-extension-for-genesys-workspace-desktop-edition/releases) and copy the content to _C:\Program Files (x86)\GCTI\Workspace Desktop Edition_ to prepare and publish a new ClickOnce revision as documented here:
 [https://docs.genesys.com/Documentation/IW/latest/Dep/DeploymentProcedures](https://docs.genesys.com/Documentation/IW/latest/Dep/DeploymentProcedures)
+### Option 2
+Use the the dedicated Windows installer (.MSI file) from a [release](https://github.com/gnaudio/jabra-call-control-extension-for-genesys-workspace-desktop-edition/releases). This installer supports mass deployment scenarios.
+
