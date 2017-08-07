@@ -1,0 +1,1 @@
+Copy all the Genesys binary files to this folder (i.e. Genesyslab.Core.dll, Genesyslab.Desktop.Infrastructure.dll, Genesyslab.Desktop.Modules.ActiveRecording.dll, Genesyslab.Desktop.Modules.Broadcasting.dll, ...)
