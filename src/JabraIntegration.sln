@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JabraCallControlExtension", "JabraCallControlExtension.csproj", "{02C71C89-E3EA-4831-BF40-2CB1F07D2670}"
-EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Setup", "Setup\Setup.wixproj", "{33343580-1829-4702-B0C0-5F7D2588BEEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JabraCallControlExtension", "JabraCallControlExtension\JabraCallControlExtension.csproj", "{02C71C89-E3EA-4831-BF40-2CB1F07D2670}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +15,12 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|x86.ActiveCfg = Debug|x86
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|x86.Build.0 = Debug|x86
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|Any CPU.ActiveCfg = Release|x86
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|x86.ActiveCfg = Release|x86
+		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|x86.Build.0 = Release|x86
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -23,12 +29,6 @@ Global
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Release|Any CPU.Build.0 = Release|Any CPU
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Release|x86.ActiveCfg = Release|Any CPU
 		{02C71C89-E3EA-4831-BF40-2CB1F07D2670}.Release|x86.Build.0 = Release|Any CPU
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|x86.ActiveCfg = Debug|x86
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Debug|x86.Build.0 = Debug|x86
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|Any CPU.ActiveCfg = Release|x86
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|x86.ActiveCfg = Release|x86
-		{33343580-1829-4702-B0C0-5F7D2588BEEF}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

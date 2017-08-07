@@ -24,7 +24,7 @@
     <Compile Include="Product.wxs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\JabraCallControlExtension.csproj">
+    <ProjectReference Include="..\JabraCallControlExtension\JabraCallControlExtension.csproj">
       <Name>JabraCallControlExtension</Name>
       <Project>{02c71c89-e3ea-4831-bf40-2cb1f07d2670}</Project>
       <Private>True</Private>

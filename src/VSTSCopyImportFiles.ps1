@@ -14,8 +14,8 @@ Write-Host "DownloadUrl = " $env:DownloadUrl
 
 Write-Host "path = " $env:BUILD_REPOSITORY_LOCALPATH 
 
-$output = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\Import\Import.zip";
-$outputFolder = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\Import";
+$output = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\JabraCallControlExtension\Import\Import.zip";
+$outputFolder = $env:BUILD_REPOSITORY_LOCALPATH  + "\src\JabraCallControlExtension\Import";
 
 Invoke-WebRequest -Uri $env:DownloadUrl -OutFile $output
 
