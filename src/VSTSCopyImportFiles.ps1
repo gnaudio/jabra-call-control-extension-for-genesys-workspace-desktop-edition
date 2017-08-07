@@ -8,9 +8,11 @@ Write-Host Executing VSTSCopyImportFiles.ps1
 # Stop on errors
 $ErrorActionPreference = "Stop" 
 
-Write-Host "PSVersion = " + $PSVersionTable.PSVersion
+Write-Host "PSVersion = " $PSVersionTable.PSVersion
 
-Write-Host "DownloadUrl = " + $env.DownloadUrl
+Write-Host "DownloadUrl = " $env:DownloadUrl
+
+Write-Host "path = " $env:BUILD_REPOSITORY_LOCALPATH 
 
 # Expand-Archive c:\a.zip -DestinationPath c:\a
 
