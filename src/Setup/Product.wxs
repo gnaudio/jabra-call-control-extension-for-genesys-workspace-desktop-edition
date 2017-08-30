@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="Jabra Genesys Workspace Desktop Edition call control extension" Language="1033" Version="0.9.0.0" Manufacturer="GN Audio A/S" UpgradeCode="328ed0ec-8d65-4c11-b0a2-32671ad02ad6">
+	<Product Id="*" Name="Jabra Genesys Workspace Desktop Edition call control extension" Language="1033" Version="1.0.0.0" Manufacturer="GN Audio A/S" UpgradeCode="328ed0ec-8d65-4c11-b0a2-32671ad02ad6">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
