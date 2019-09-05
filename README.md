@@ -22,6 +22,9 @@ Supported device features:
 -	End active call
 - Hold/resume
 
+## Build this extension
+Since this extension dependes on several Genesys assemblies, and these assemblies changes for each WDE version, it is required to rebuild the extension to the specific Genesys assemblies being used.
+
 ## How to test this extension
 Before deploying the extension to an organization, you can test this extension from a PC with Genesys Workspace Desktop Edition version 8.5 installed:
 - Close the Genesys Workspace Desktop Edition software
