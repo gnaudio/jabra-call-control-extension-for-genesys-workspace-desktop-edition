@@ -716,7 +716,7 @@ namespace JabraCallControlExtension
               SIPEndpoint sipEndpoint = container.Resolve<ISIPEndpointCommunication>().FindSIPEndpoint(ixnVoice);
               if (sipEndpoint != null)
               {
-                sipEndpoint.IsMicrophoneMuted = true;
+                //sipEndpoint.IsMicrophoneMuted = true;
               }
             }
           }
@@ -761,7 +761,7 @@ namespace JabraCallControlExtension
               SIPEndpoint sipEndpoint = container.Resolve<ISIPEndpointCommunication>().FindSIPEndpoint(ixnVoice);
               if (sipEndpoint != null)
               {
-                sipEndpoint.IsMicrophoneMuted = false;
+                //sipEndpoint.IsMicrophoneMuted = false;
               }
             }
           }
@@ -846,12 +846,12 @@ namespace JabraCallControlExtension
     {
       if (e.PropertyName == "IsMicrophoneMuted")
       {
-        SIPEndpoint sipEndpoint = sender as SIPEndpoint;
-        bool microphoneMuted = sipEndpoint.IsMicrophoneMuted;
-
-        /* Mic mute change */
-
-        SetMicrophoneMuted(microphoneMuted);
+//        SIPEndpoint sipEndpoint = sender as SIPEndpoint;
+//        bool microphoneMuted = sipEndpoint.IsMicrophoneMuted;
+//
+//        /* Mic mute change */
+//
+//        SetMicrophoneMuted(microphoneMuted);
       }
       // Should also work with IsSpeakerMuted, MicrophoneVolume, SpeakerVolume
     }
